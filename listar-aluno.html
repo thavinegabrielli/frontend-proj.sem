@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refúgio Literário - Alunos</title>
+    <link rel="stylesheet" href="css/listar-aluno.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="assets/img/logo.png" alt="Logo"></h1>
+        </div>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="listar-aluno.html">ALUNO</a>
+            <a href="listar-livro.html">LIVROS</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tela de Lista de Alunos -->
+        <section id="lista-alunos" class="content-section">
+            <button class="btn-cadastrar" onclick="showCadastro()">CADASTRAR ALUNO</button>
+            <h2>ALUNOS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>idAluno</th>
+                        <th>ra</th>
+                        <th>nome</th>
+                        <th>e-mail</th>
+                        <th>telefone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>5440</td>
+                        <td>Laura Cardoso</td>
+                        <td>Lau.c@gmail.com</td>
+                        <td>16 993626564</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>5320</td>
+                        <td>Lucas Mendes Silva</td>
+                        <td>lumen@gmail.com</td>
+                        <td>16 998765436</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4029</td>
+                        <td>Virginia Fonseca</td>
+                        <td>Viviseca@hotmail.com</td>
+                        <td>16 897656001</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>6020</td>
+                        <td>Benjamin Wadsworth</td>
+                        <td>wadsWorbj@gmail.com</td>
+                        <td>16 001425637</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tela de Cadastro de Aluno -->
+        <section id="cadastro-aluno" class="content-section" style="display: none;">
+            <h2>CADASTRO DO ALUNO</h2>
+            <form>
+                <input type="text" placeholder="nome...">
+                <input type="text" placeholder="sobrenome....">
+                <input type="text" placeholder="Data Nascimento...">
+                <input type="text" placeholder="Endereço...">
+                <input type="email" placeholder="Email.....">
+                <input type="text" placeholder="Celular...">
+
+          <button type="submit">CADASTRAR</button>
+
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function showCadastro() {
+            document.getElementById("lista-alunos").style.display = "none";
+            document.getElementById("cadastro-aluno").style.display = "block";
+        }
+    </script>
+</body>
+</html>

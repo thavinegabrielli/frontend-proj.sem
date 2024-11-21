@@ -1,0 +1,108 @@
+/* home.css */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: #FAF6E9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #020873;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo h1 img {
+    height: 100px;
+}
+
+header nav button {
+    background: none;
+    border: none;
+    font-size: 19px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 100px;
+    font-weight: bold;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20 auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.intro input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Sugestões Section */
+.sugestoes h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book {
+    text-align: center;
+    width: 140px;
+}
+
+.book img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rating {
+    color: #FFB400;
+    font-size: 16px;
+}
+
+

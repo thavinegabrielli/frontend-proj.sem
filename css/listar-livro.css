@@ -1,0 +1,120 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-color: #FAF6E9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #020873;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo h1 img {
+    height: 100px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 100px;
+    font-weight: bold;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content-section {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #020873;
+    margin-bottom: 20px;
+}
+
+/* Botão Cadastrar */
+.btn-cadastrar {
+    background-color: #020873;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #031c57;
+}
+
+/* Tabela de Alunos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #020873;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #FAF6E9;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* Formulário de Cadastro */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020873;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="text"]::placeholder, form input[type="email"]::placeholder {
+    color: #777;
+}
+
+.btn-cadastrar:hover {
+    background-color: #141255;
+}

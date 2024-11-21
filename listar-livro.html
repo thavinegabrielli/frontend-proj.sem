@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refúgio Literário - Livros</title>
+    <link rel="stylesheet" href="css/listar-livro.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><img src="assets/img/logo.png" alt="Logo"></h1>
+        </div>
+        <nav>
+            <a href="index.html">INÍCIO</a>
+            <a href="listar-aluno.html">ALUNO</a>
+            <a href="listar-livro.html">LIVROS</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tela de Lista de Livros -->
+        <section id="lista-livros" class="content-section">
+            <button class="btn-cadastrar" onclick="showCadastro()">CADASTRAR LIVRO</button>
+            <h2>LIVROS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>titulo</th>
+                        <th>autor</th>
+                        <th>quantidade</th>
+                        <th>disponíveis</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Corte de Espinhos e Rosas</td>
+                        <td>Sarah J. Maas</td>
+                        <td>10</td>
+                        <td>9</td>
+                        <td>Emprestado</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Diário de Anne Frank</td>
+                        <td>Anne Frank</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>Emprestado</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Harry P. Pedra Filosofal</td>
+                        <td>J. K. Rowling</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td>Emprestado</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>O Fabricante de Lágrimas</td>
+                        <td>ERIN DOOM</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>Emprestado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Tela de Cadastro de Livro -->
+        <section id="cadastro-livro" class="content-section" style="display: none;">
+            <h2>CADASTRAR LIVRO</h2>
+            <form>
+                <input type="text" placeholder="titulo...">
+                <input type="text" placeholder="autor...">
+                <input type="text" placeholder="editora...">
+                <input type="text" placeholder="ano...">
+                <input type="text" placeholder="isbn...">
+                <input type="text" placeholder="quantidade...">
+
+           <button type="submit">CADASTRAR</button>
+
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function showCadastro() {
+            document.getElementById("lista-livros").style.display = "none";
+            document.getElementById("cadastro-livro").style.display = "block";
+        }
+    </script>
+</body>
+</html>
